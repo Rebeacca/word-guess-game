@@ -1,4 +1,3 @@
-// variables I'll need 
 let character = [
     "ARYA",
     "GENDRY",
@@ -81,3 +80,14 @@ function complete() {
     document.getElementById("guessesRemaining").innerHTML = " " + guessesRemaining;
 }
 
+Game()
+document.onkeyup = function (event) {
+    var guesses = String.fromCharCode(event.keyCode).toUpperCase();
+    checkLetters(guesses);
+    complete();
+  
+    console.log(guesses);
+    // wrong letters
+document.getElementById("used").innerHTML = "  " + wrong.join(" ");
+
+}

@@ -21,3 +21,7 @@ body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 15px;
 }
+
+p {
+    padding: 10px 0 10px 0;
+}
